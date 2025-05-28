@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
 });
 
 window.addEventListener('load', () => {
-    fetch('javascript/quotes.json')
+    fetch('/ymisty/javascript/quotes.json')
     .then(response => {
         if (!response.ok) throw new Error('HTTP status ' + response.status);
         return response.json();
